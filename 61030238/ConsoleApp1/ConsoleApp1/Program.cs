@@ -10,6 +10,7 @@ namespace ConsoleAppArray
     {
         static void Main(string[] args)
         {
+
             int b;
             int[] data = new int[10];
             data[0] = 0;
@@ -22,12 +23,19 @@ namespace ConsoleAppArray
             data[7] = 7;
             data[8] = 8;
             data[9] = 9;
-            b = data[4] + data[9];
-            Console.WriteLine(b);
 
+            if (data[4] == data[9])
+            {
+                Console.WriteLine("เท่ากัน");
+            }
+            else
+            {
+                Console.WriteLine("ไม่เท่ากัน");
+            }
 
 
             Console.ReadLine();
+
 
 
 
