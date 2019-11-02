@@ -11,7 +11,7 @@ namespace ConsoleAppArray
         static void Main(string[] args)
         {
 
-            int b;
+            int b,N;
             int[] data = new int[10];
             data[0] = 0;
             data[1] = 1;
@@ -23,10 +23,10 @@ namespace ConsoleAppArray
             data[7] = 7;
             data[8] = 8;
             data[9] = 9;
-
-            b = data[0] + data[1] + data[2] + data[3] + data[4] + data[5] + data[6] + data[7] + data[8] + data[9];
-            Console.WriteLine(b);
-
+            for (N = 0; N <= 9; N = N + 1)
+            {
+                Console.WriteLine(data[N]);
+            }
 
             Console.ReadLine();
 
