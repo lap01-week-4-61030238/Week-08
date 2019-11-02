@@ -11,30 +11,26 @@ namespace ConsoleAppArray
         static void Main(string[] args)
         {
 
-            int b,N;
             int[] data = new int[10];
-            data[0] = 0;
-            data[1] = 1;
-            data[2] = 2;
-            data[3] = 3;
-            data[4] = 4;
-            data[5] = 5;
-            data[6] = 6;
-            data[7] = 7;
-            data[8] = 8;
-            data[9] = 9;
-            for (N = 0; N <= 9; N = N + 1)
+            Student[] student = new Student[31];
+            Console.WriteLine(data.Length);
+            Console.WriteLine(student.Length);
+            Console.ReadLine();
+        }
+        class Student     // nested class
+        {
+            private string name;
+            public string Name
             {
-                Console.WriteLine(data[N]);
+                get { return name; }
+                set { name = value; }
+
+
+
+
             }
 
-            Console.ReadLine();
-
-
-
-
         }
-
     }
 }
 
