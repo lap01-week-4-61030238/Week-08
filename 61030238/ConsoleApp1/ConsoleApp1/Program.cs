@@ -24,6 +24,7 @@ namespace ConsoleAppArray
             {
                 get { return name; }
                 set { name = value; }
+                
 
 
 
