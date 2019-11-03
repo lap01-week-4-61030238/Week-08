@@ -11,16 +11,18 @@ namespace ConsoleAppArray
         static void Main(string[] args)
         {
             string[] array1 = { "January", "March", "February", "April","May", "June", "July ", "August", "September ", "October ", "November ", "December" };
-            for (int n = 0; n < 10; n++)
+            for (int n = 10; n < 15; n++)
 
             {
 
                 //
                 // ค้นหาสมาชิกตัวแรกที่มีความยาว string ตามกำหนด
                 //
-                string value3 = Array.Find(array1,
+                string[] array2 = Array.FindAll(array1,
                 element => element.Length == n);
-                Console.WriteLine(value3);
+
+
+                Console.WriteLine(string.Join(",", array2));
             }
             Console.ReadLine();
             
