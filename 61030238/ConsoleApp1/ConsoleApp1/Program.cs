@@ -21,7 +21,7 @@ namespace ConsoleAppArray
                 x = int.Parse(Console.ReadLine());
                 gpa[n] = x;
             }
-            Console.WriteLine("ป้อนเดือน");
+            Console.WriteLine("ป้อนเดือน1=มกรา,2=กุมภา,3=มีนา,4=เมษา,5=พฤษภา,6=,มิถุนา,7=กรกฎา,8=สิงหา,9=กันยา,10=ตุลา,11=พฤษจิกา,12=ธันวา");
             for (int n = 0; n < 8; n++)
             {
                 Console.WriteLine("เกรด gps ");
