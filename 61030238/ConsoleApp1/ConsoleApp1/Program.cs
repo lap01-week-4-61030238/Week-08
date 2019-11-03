@@ -10,7 +10,7 @@ namespace ConsoleAppArray
     {
         static void Main(string[] args)
         {
-            int p,q;
+            int p,q,d;
             Console.WriteLine("ป้อนค่าที่1แต่ละเดือน12เดือน");
             Console.WriteLine("ป้อนเลข1=วันจันทร์ม,2=อังคาร,3=พุธ,4=พฤหัส,5=ศุกร์,6=เสาร์,7=อาทิตย์");
             int[] gpa = new int[12];
@@ -23,6 +23,12 @@ namespace ConsoleAppArray
             }
             Console.WriteLine("ป้อนเดือน1=มกรา,2=กุมภา,3=มีนา,4=เมษา,5=พฤษภา,6=,มิถุนา,7=กรกฎา,8=สิงหา,9=กันยา,10=ตุลา,11=พฤษจิกา,12=ธันวา");
             q = int.Parse(Console.ReadLine());
+            if(q==1)
+            {
+                p = int.Parse(Console.ReadLine());
+                d = (p + gpa[0])/7;
+
+            }
 
             for (int n = 0; n < 12; n++)
             {
@@ -30,10 +36,9 @@ namespace ConsoleAppArray
                 Console.WriteLine(gpa[n]);
 
             }
-            switch
-        {
+           
             Console.ReadLine();
-        }
+        
 
 
 
