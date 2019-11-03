@@ -11,9 +11,9 @@ namespace ConsoleAppArray
         static void Main(string[] args)
         {
             int p;
-            Console.WriteLine("ป้อนค่าgps8เทอม");
-            int[] gpa = new int[8];
-            for (int n=0;n<8;n++)
+            Console.WriteLine("ป้อนค่าที่1แต่ละเดือน12เดือน");
+            int[] gpa = new int[12];
+            for (int n=0;n<12;n++)
             {
                 int  x;
                 
