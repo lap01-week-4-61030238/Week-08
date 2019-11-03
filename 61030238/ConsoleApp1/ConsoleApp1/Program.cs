@@ -62,12 +62,7 @@ namespace ConsoleAppArray
                 }
             }
 
-            for (int n = 0; n < 12; n++)
-            {
-                Console.WriteLine("เกรด gps ");
-                Console.WriteLine(gpa[n]);
-
-            }
+           
            
             Console.ReadLine();
         
