@@ -19,7 +19,8 @@ namespace ConsoleAppArray
                 // ค้นหาสมาชิกตัวแรกที่มีความยาว string ตามกำหนด
                 //
                 string value3 = Array.Find(array1,
-                    element => element.Length == n);
+                element => element.Length == n);
+                Console.WriteLine(value3);
             }
             Console.ReadLine();
             
