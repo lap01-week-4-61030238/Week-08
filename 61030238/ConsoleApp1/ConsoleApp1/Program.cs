@@ -22,11 +22,14 @@ namespace ConsoleAppArray
                 gpa[n] = x;
             }
             Console.WriteLine("ป้อนเดือน1=มกรา,2=กุมภา,3=มีนา,4=เมษา,5=พฤษภา,6=,มิถุนา,7=กรกฎา,8=สิงหา,9=กันยา,10=ตุลา,11=พฤษจิกา,12=ธันวา");
+            
             q = int.Parse(Console.ReadLine());
             if(q==1)
             {
+                Console.WriteLine("วันที่");
                 p = int.Parse(Console.ReadLine());
-                d = (p + gpa[0])/7;
+                d = (p + gpa[0])%7;
+                Console.WriteLine(d);
                 if(d==0)
                 {
                     Console.WriteLine("วันจันทร์/มกรา/2562");
@@ -37,7 +40,7 @@ namespace ConsoleAppArray
                 }
                 else if (d == 2)
                 {
-                    Console.WriteLine("วันอังพุธ/มกรา/2562");
+                    Console.WriteLine("วันพุธ/มกรา/2562");
                 }
                 else if (d == 3)
                 {
