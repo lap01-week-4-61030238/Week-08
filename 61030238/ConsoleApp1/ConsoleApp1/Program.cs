@@ -10,25 +10,35 @@ namespace ConsoleAppArray
     {
         static void Main(string[] args)
         {
-            int p;
-            Console.WriteLine("ป้อนค่าที่1แต่ละเดือน12เดือน");
-            int[] gpa = new int[12];
-            for (int n=0;n<12;n++)
-            {
-                int  x;
-                
-                x = int.Parse(Console.ReadLine());
-                gpa[n] = x;
-            }
-            for (int n = 0; n < 8; n++)
-            {
-                Console.WriteLine("เกรด gps ");
-                Console.WriteLine(gpa[n]);
+            string[] array1 = { "cat", "dog", "carrot", "bird" };
 
-            }
-            p = (gpa[0] + gpa[1] + gpa[2]+ gpa[3] + gpa[4] + gpa[5] + gpa[6] + gpa[7])/8;
-            Console.WriteLine("เกรด gpa ");
-            Console.WriteLine(p);
+            //
+            // ค้นหาสมาชิกตัวแรกที่มีค่าตามกำหนด 
+            //
+            string value1 = Array.Find(array1,
+              element => element.StartsWith("car",
+              StringComparison.Ordinal));
+
+            string value2 = Array.Find(array1,
+              element => element.StartsWith("fish",
+              StringComparison.Ordinal));
+
+            //
+            // ค้นหาสมาชิกตัวแรกที่มีความยาว string ตามกำหนด
+            //
+            string value3 = Array.Find(array1,
+                element => element.Length == 3);
+
+            //
+            // ค้นหา string ที่มีความยาวไม่เกินค่าที่กำหนด
+            //
+            string[] array2 = Array.FindAll(array1,
+                element => element.Length <= 4);
+
+            Console.WriteLine(value1);
+            Console.WriteLine(value2);
+            Console.WriteLine(value3);
+            Console.WriteLine(string.Join(",", array2));
             Console.ReadLine();
 
 
@@ -37,7 +47,7 @@ namespace ConsoleAppArray
 
 
         }
-        
+
     }
     }
 
