@@ -10,7 +10,7 @@ namespace ConsoleAppArray
     {
         static void Main(string[] args)
         {
-            string[] array1 = { "cat", "dog", "carrot", "bird" };
+            string[] array1 = { "January", "March", "February", "April","May", "June", "July ", "August", "September ", "October ", "November ", "December" };
 
             //
             // ค้นหาสมาชิกตัวแรกที่มีค่าตามกำหนด 
