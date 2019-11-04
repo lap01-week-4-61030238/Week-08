@@ -16,11 +16,11 @@ namespace ConsoleAppArray
             // ค้นหาสมาชิกตัวแรกที่มีค่าตามกำหนด 
             //
             string value1 = Array.Find(array1,
-              element => element.StartsWith("car",
+              element => element.StartsWith("c",
               StringComparison.Ordinal));
 
             string value2 = Array.Find(array1,
-              element => element.StartsWith("fish",
+              element => element.StartsWith("c",
               StringComparison.Ordinal));
 
             //
