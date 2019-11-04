@@ -15,18 +15,14 @@ namespace ConsoleAppArray
             string[] AseanCountries = new string[] { "January", "March", "February", "April", "May", "June", "July ", "August", "September ", "October ", "November ", "December" };
 
             // C# program that uses LINQ
-            var sortAscending = from country in AseanCountries
-                                orderby country
-                                select country;
+            
             var sortDescending = from country in AseanCountries
                                  orderby country descending
                                  select country;
 
            
 
-            Console.WriteLine("------String sort ascending----------");
-            foreach (string c in sortAscending)
-                Console.WriteLine(c);
+            
 
             Console.WriteLine("------String sort descending----------");
             foreach (string c in sortDescending)
