@@ -13,7 +13,7 @@ namespace ConsoleAppArray
             string[] Array1 = { "January", "March", "February", "April", "May", "June", "July ", "August", "September ", "October ", "November ", "December" };
 
             string[] Array2 = Array.FindAll(Array1,
-                element => element.EndsWith("r",
+                element => element.EndsWith("ry",
               StringComparison.Ordinal));
 
 
