@@ -17,11 +17,14 @@ namespace ConsoleAppArray
               StringComparison.Ordinal));
 
 
+
             Console.WriteLine(string.Join(",", Array2));
 
-           
-            
-            
+            Console.WriteLine(Array2[1]);
+
+
+
+
             Console.ReadLine();
 
         }
