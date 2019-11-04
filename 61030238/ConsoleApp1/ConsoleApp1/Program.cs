@@ -14,6 +14,9 @@ namespace ConsoleAppArray
             string value1 = Array.Find(array1,
                element => element.StartsWith("J",
                StringComparison.Ordinal));
+            string[] array2 = Array.FindAll(array1,
+                element => element.StartsWith("J",
+              StringComparison.Ordinal));
 
 
             Console.WriteLine(value1);
