@@ -249,12 +249,12 @@ namespace ConsoleAppArray
         "Yemen",
         "Zambia",
         "Zimbabwe",};
-            string value1 = Array.Find(array1,
-               element => element.StartsWith("J",
-               StringComparison.Ordinal));
+            string[] array2 = Array.FindAll(array1,
+               element => element.EndsWith("land",
+             StringComparison.Ordinal));
 
 
-            Console.WriteLine(value1);
+            Console.WriteLine(string.Join(",", array2));
 
             Console.ReadLine();
             
