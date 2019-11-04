@@ -12,9 +12,7 @@ namespace ConsoleAppArray
         {
            
 
-            string[] AseanCountries = new string[] { "Cambodia", "Malaysia",
-              "Indonesia", "Singapore", "Thailand", "Philippines",
-              "Vietnam", "Brunei Darussalam", "Laos", "Myanmar" };
+            string[] AseanCountries = new string[] { "January", "March", "February", "April", "May", "June", "July ", "August", "September ", "October ", "November ", "December" };
 
             // C# program that uses LINQ
             var sortAscending = from country in AseanCountries
