@@ -24,9 +24,9 @@ namespace DictionaryDemo
                 int value = dict1["One"];
                 Console.WriteLine(value);
             }
-            if (dict1.ContainsKey("Eleven"))
+            if (dict1.ContainsKey("Ten"))
             {
-                int value = dict1["Eleven"];
+                int value = dict1["Ten"];
                 Console.WriteLine(value);
             }
             Console.ReadLine();
