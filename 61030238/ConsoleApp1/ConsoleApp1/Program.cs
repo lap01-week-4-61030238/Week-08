@@ -18,9 +18,7 @@ namespace ConsoleAppArray
             var sortAscending = from country in AseanCountries
                                 orderby country
                                 select country;
-            var sortDescending = from country in AseanCountries
-                                 orderby country descending
-                                 select country;
+            
 
            
 
@@ -28,10 +26,7 @@ namespace ConsoleAppArray
             foreach (string c in sortAscending)
                 Console.WriteLine(c);
 
-            Console.WriteLine("------String sort descending----------");
-            foreach (string c in sortDescending)
-                Console.WriteLine(c);
-            // wait
+            
             Console.ReadLine();
 
 
