@@ -19,7 +19,7 @@ namespace ConsoleAppArray
 
 
             Console.WriteLine(string.Join(",", Array2));
-            for (int i = 0; i < Array1.Length; i++)
+            for (int i = 0; i < Array2.Length; i++)
             {
                 Console.WriteLine(Array2[i]);
 
