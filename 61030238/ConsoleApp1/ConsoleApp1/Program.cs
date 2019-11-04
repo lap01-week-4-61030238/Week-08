@@ -24,16 +24,7 @@ namespace ConsoleAppArray
                     Console.Write(" {0}", count);
                 }
             }
-            Console.WriteLine("\n\nTotals");
-            for (int row = 0; row < jagged.GetLength(0); ++row)
-            {
-                int total = 0;
-                for (int index = 0; index < jagged[row].GetLength(0); ++index)
-                {
-                    total += jagged[row][index];
-                }
-                Console.Write("\nRow {0}: {1}", row, total);
-            }
+         
             Console.ReadLine();
 
 
