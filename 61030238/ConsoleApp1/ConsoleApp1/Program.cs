@@ -10,7 +10,7 @@ namespace ConsoleAppArray
     {
         static void Main(string[] args)
         {
-            int[][] jagged = { "sdwsd"};
+            string[][] jagged = { "sdwsd"};
 
             int count = 0;
             for (int row = 0; row < jagged.GetLength(0); ++row)
