@@ -251,7 +251,7 @@ namespace ConsoleAppArray
         "Zimbabwe" };
 
             string[] Array2 = Array.FindAll(Array1,
-                element => element.EndsWith("land",
+                element => element.EndsWith("stan",
               StringComparison.Ordinal));
 
 
