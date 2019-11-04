@@ -20,7 +20,7 @@ namespace ConsoleAppArray
               StringComparison.Ordinal));
 
             string value2 = Array.Find(array1,
-              element => element.StartsWith("c",
+              element => element.EndsWith("g",
               StringComparison.Ordinal));
 
             //
