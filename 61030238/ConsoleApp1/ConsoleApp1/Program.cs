@@ -11,15 +11,13 @@ namespace ConsoleAppArray
         static void Main(string[] args)
         {
             string[] array1 = { "January", "March", "February", "April","May", "June", "July ", "August", "September ", "October ", "November ", "December" };
-            string value1 = Array.Find(array1,
-               element => element.StartsWith("J",
-               StringComparison.Ordinal));
+            
             string[] array2 = Array.FindAll(array1,
                 element => element.StartsWith("J",
               StringComparison.Ordinal));
 
 
-            Console.WriteLine(value1);
+            Console.WriteLine(string.Join(",", array2));
 
             Console.ReadLine();
             
