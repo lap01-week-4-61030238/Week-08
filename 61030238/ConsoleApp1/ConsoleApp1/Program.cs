@@ -19,11 +19,12 @@ namespace ConsoleAppArray
 
 
             Console.WriteLine(string.Join(",", Array2));
+            for (int i = 0; i < Array1.Length; i++)
+            {
+                Console.WriteLine(Array2[i]);
 
-            Console.WriteLine(Array2[1]);
-
-
-
+            }
+            Console.WriteLine("copyเหมือนกัน");
 
             Console.ReadLine();
 
