@@ -8,6 +8,7 @@ namespace ArrayListDemo
         static void Main(string[] args)
         {
             ArrayList list1 = new ArrayList();
+
             list1.Add(10);
             list1.Add(20);
             list1.Add(30);
@@ -19,8 +20,8 @@ namespace ArrayListDemo
             ArrayList list2 = new ArrayList(list1);
             list2[2] = 55;
             list2[3] = 66;
-            list2[4] = 77;
-
+            list2[0] = 66;
+            list2[1] = 5;
             for (int i = 0; i < list2.Count; i++)
             {
                 Console.WriteLine(list2[i]);
