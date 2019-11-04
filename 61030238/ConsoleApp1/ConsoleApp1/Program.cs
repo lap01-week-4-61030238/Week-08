@@ -1,37 +1,36 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Collections;
 
-namespace ConsoleAppArray
+namespace ArrayListDemo
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string[][] jagged = { "sdwsd"};
-
-            int count = 0;
-            for (int row = 0; row < jagged.GetLength(0); ++row)
+            ArrayList list = new ArrayList();
+            Console.WriteLine("Create a list");
+            Console.WriteLine("List capacity = {0,2}", list.Capacity);
+            for (int i = 0; i < 100; i++)
             {
-                Console.Write("\nRow {0}:", row);
-                jagged[row] = new int[row + 1];
-                for (int index = 0; index < row + 1; ++index)
-                {
-                    ++count;
-                    jagged[row][index] = count;
-                    Console.Write(" {0}", count);
-                }
+                Console.Write("Add int to list : {0,2} => ", i);
+                list.Add(i);
+                Console.WriteLine("List count =  {0,3}, capacity = {1,3}  ",
+    list.Count, list.Capacity);
             }
-         
+            Console.WriteLine("-----------------------");
+            for (int i = 0; i < 100; i++)
+            {
+                Console.Write("Remove int from list : {0,2} => ", i);
+                list.Remove(i);
+                Console.WriteLine("List count =  {0,3}, capacity = {1,3}  ",
+    list.Count, list.Capacity);
+            }
             Console.ReadLine();
-
-
-
         }
     }
 }
+
+
 
 
 
