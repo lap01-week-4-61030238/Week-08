@@ -33,7 +33,8 @@ namespace ConsoleAppArray
             // ค้นหา string ที่มีความยาวไม่เกินค่าที่กำหนด
             //
             string[] array2 = Array.FindAll(array1,
-                element => element.Length <= 4);
+                element => element.StartsWith("c",
+              StringComparison.Ordinal));
 
             Console.WriteLine(value1);
             Console.WriteLine(value2);
