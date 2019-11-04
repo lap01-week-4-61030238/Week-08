@@ -19,16 +19,14 @@ namespace ConsoleAppArray
             Console.WriteLine("===== Before =====");
             for (int i = 0; i < ArrayA.Length; i++)
             {
-                Console.WriteLine("arrayA[{0}] = {1},  ArrayB[{0}] = { 2}"
-               , i, ArrayA[i], ArrayB[i]);
+                Console.WriteLine("arrayA[{0}] = {1},  ArrayB[{0}] = { 2}", i, ArrayA[i], ArrayB[i]);
             }
             // change element 0 of ArrayA
             ArrayA[0] = 9;
             Console.WriteLine("===== After ======");
             for (int i = 0; i < ArrayA.Length; i++)
             {
-                Console.WriteLine("ArrayA[{0}] = {1},  ArrayB[{ 0}] = { 2}"
-                    , i, ArrayA[i], ArrayB[i]);
+                Console.WriteLine("ArrayA[{0}] = {1},  ArrayB[{ 0}] = { 2}", i, ArrayA[i], ArrayB[i]);
             }
 
             // copy by method Array.Copy()
@@ -39,16 +37,14 @@ namespace ConsoleAppArray
             Console.WriteLine("===== Before =====");
             for (int i = 0; i < ArrayA.Length; i++)
             {
-                Console.WriteLine("ArrayA[{0}] = {1}, ArrayC[{ 0}] = { 2}",
-                    i, ArrayA[i], ArrayC[i]);
+                Console.WriteLine("ArrayA[{0}] = {1}, ArrayC[{ 0}] = { 2}",i, ArrayA[i], ArrayC[i]);
             }
             // change element 0 of ArrayA
             ArrayA[0] = 1;
             Console.WriteLine("===== After =====");
             for (int i = 0; i < ArrayA.Length; i++)
             {
-                Console.WriteLine("ArrayA[{0}] = {1},  ArrayC[{ 0}] = { 2"
-                    , i, ArrayA[i], ArrayC[i]);
+                Console.WriteLine("ArrayA[{0}] = {1},  ArrayC[{ 0}] = { 2}", i, ArrayA[i], ArrayC[i]);
             }
 
             // wait
