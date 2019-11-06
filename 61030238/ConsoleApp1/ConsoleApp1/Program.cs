@@ -11,7 +11,7 @@ namespace ConsoleAppArray
         static void Main(string[] args)
         {
             string[] array1 = { "January", "March", "February", "April","May", "June", "July ", "August", "September ", "October ", "November ", "December" };
-            for (int n = 10; n < 15; n++)
+            for (int n = 11; n < 15; n++)
 
             {
 
